@@ -9,11 +9,11 @@
         <div class="app-divide hide-for-small-only">
         </div>
         <div class="page-title-container">
-          <RouterLink :to="appLink">
+          <router-link :to="appLink">
             <h1 class="page-title">
               {{ appTitle }}
             </h1>
-          </RouterLink>
+          </router-link>
         </div>
       </div>
       <div class="cell medium-auto small-centered text-center">

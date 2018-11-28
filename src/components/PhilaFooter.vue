@@ -13,9 +13,9 @@
                   </a>
                 </template>
                 <template v-else-if="typeof link.link === 'string' && !testLink(link.link)">
-                  <RouterLink :to="link.link" :target="link.target || '_self'">
+                  <router-link :to="link.link" :target="link.target || '_self'">
                     {{ link.text }}
-                  </RouterLink>
+                  </router-link>
                 </template>
                 <template v-else-if="typeof link.link === 'string' && testLink(link.link)">
                   <a :href="link.link" :target="link.target || '_self'">

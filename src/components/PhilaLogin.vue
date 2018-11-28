@@ -8,9 +8,9 @@
       <input v-for="(input, index) in inputs" :key="index" v-model="form[input.model]" v-bind="input" required>
       <div class="grid-x align-middle">
         <div class="cell small-24 medium-auto links">
-          <RouterLink v-for="(link, indx) in links" :key="indx" :to="link.to" v-bind="link.attrs || {}">
+          <router-link v-for="(link, indx) in links" :key="indx" :to="link.to" v-bind="link.attrs || {}">
             {{ link.text }}
-          </RouterLink>
+          </router-link>
         </div>
         <div class="cell small-24 medium-auto medium-shrink small-text-center text-right">
           <button :disabled="disabledOnSubmit" type="submit">

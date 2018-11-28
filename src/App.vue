@@ -1,6 +1,6 @@
 <template>
   <div id="application">
-    <PhilaHeader />
+    <phila-header />
     <phila-sub-header-nav />
     <phila-login :submit-event="loginEvent" />
     <phila-footer />
@@ -22,7 +22,17 @@ export default {
     PhilaSubHeaderNav,
     PhilaLogin
   },
-
+  data() {
+    return {
+      subHeaderLinks: [
+        {
+          link: 'http://example.com',
+          text: 'Go to example',
+          target: '_blank'
+        }
+      ]
+    }
+  },
   methods: {
     loginEvent(data) {
       console.log(data)

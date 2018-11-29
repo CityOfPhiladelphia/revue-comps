@@ -1,6 +1,6 @@
 # revue-comps
 
-A plave to review vue components for phila projects.
+A place to review vue components for phila projects.
 
 1. Use these [guidelines](https://github.com/CityOfPhiladelphia/revue-comps/wiki/Guidelines) when creating new components
 2. Submit EACH component as a new branch for review

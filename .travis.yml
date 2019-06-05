@@ -5,11 +5,5 @@ node_js:
 branches:
   except:
     - gh-pages
-stages:
-  - lint
-jobs:
-  include:
-    - stage: lint
-      script:
-        # Run linter
-        - npm run lint
+script:
+  - npm run lint

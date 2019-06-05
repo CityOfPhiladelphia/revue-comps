@@ -1,20 +1,19 @@
 {
-  "name": "revue-comps",
-  "version": "1.0.0",
-  "description": "A place to review vue components for phila projects.",
-  "main": "index.js",
+  "name": "components",
+  "private": true,
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "vue-cli-service lint",
+    "test": "vue-cli-service test"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/CityOfPhiladelphia/revue-comps.git"
+  "dependencies": {
+    "vue": "^2.6.10"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/CityOfPhiladelphia/revue-comps/issues"
-  },
-  "homepage": "https://github.com/CityOfPhiladelphia/revue-comps#readme"
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "^3.8.0",
+    "@vue/cli-plugin-eslint": "^3.8.0",
+    "@vue/cli-service": "^3.8.0",
+    "babel-eslint": "^10.0.1",
+    "eslint": "^5.16.0",
+    "eslint-plugin-vue": "^5.0.0"
+  }
 }

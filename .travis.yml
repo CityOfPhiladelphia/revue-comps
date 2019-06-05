@@ -1,0 +1,22 @@
+language: node_js
+node_js:
+  - "10.16.0"
+  - "node"
+install:
+  - npm install
+branches:
+  except:
+    - gh-pages
+stages:
+  - lint
+  # - test
+jobs:
+  include:
+    - stage: lint
+      script:
+        # Run linter
+        - npm run lint
+    # - stage: test
+    #   script:
+    #     # Run tests
+    #     - npm run test
